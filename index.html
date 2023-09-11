@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Playing the Piano</title>
   </head>
   <style>
     body {
@@ -57,16 +57,27 @@
       background: #f3eadd;
       color: black;
     }
+    .piano-intro-pic {
+      border-radius: 10px;
+      transition: transform 150ms ease-in-out, filter 500ms ease-in-out;
+    }
+    .piano-intro-pic:hover {
+      filter: contrast(50%);
+      transform: scale(1.05);
+    }
   </style>
   <body>
     <button class="theme-button">Change Theme</button>
     <div class="container">
       <h1 class="center">Playing the Piano</h1>
       <h2 class="center">My Favorite Hobby</h2>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/586/original/miguel-dominguez-5yDL5rOKrUM-unsplash.jpg?1694389101"
-        alt="Piano with Flowers Surrounding"
-      />
+      <a href="https://en.wikipedia.org/wiki/Piano" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/586/original/miguel-dominguez-5yDL5rOKrUM-unsplash.jpg?1694389101"
+          alt="Piano with Flowers Surrounding"
+          class="piano-intro-pic"
+        />
+      </a>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/587/original/piano_main.jpeg?1694389123"
         alt="Overhead Shot of a Grand Piano"
