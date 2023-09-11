@@ -33,6 +33,7 @@
     footer {
       text-align: center;
       margin-top: 10px;
+      margin-bottom: 10px;
       color: black;
       font-size: 20px;
     }
@@ -57,6 +58,9 @@
       background: #f3eadd;
       color: black;
     }
+    .button-link {
+      text-decoration: none;
+    }
     .piano-intro-pic {
       border-radius: 10px;
       transition: transform 150ms ease-in-out, filter 500ms ease-in-out;
@@ -75,6 +79,25 @@
       width: 100%;
       height: 200px;
       border-radius: 5px;
+    }
+    .dark {
+      background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/586/original/miguel-dominguez-5yDL5rOKrUM-unsplash.jpg?1694389101");
+      background-size: cover;
+      color: #eedfc3;
+    }
+    .dark .container {
+      background: #251804;
+    }
+    .dark footer {
+      color: #eedfc3;
+    }
+    .dark .theme-button {
+      background: #e9c385;
+      color: black;
+    }
+    .dark .theme-button:hover {
+      background: black;
+      color: #eedfc3;
     }
   </style>
   <body>
@@ -117,11 +140,42 @@
         octaves. The black keys are for the "accidentals" (F♯/G♭, G♯/A♭, A♯/B♭,
         C♯/D♭, and D♯/E♭), which are needed to play in all twelve keys.
       </p>
-      <button>Learn How to Play</button>
+      <a
+        href="https://www.youtube.com/watch?v=4SXQ_wlbWog"
+        target="_blank"
+        class="button-link"
+      >
+        <button>Learn How to Play</button></a
+      >
     </div>
     <footer>
       <div>Coded by Baylie Owen</div>
-      <div>Open-sourced on GitHub and Hosted on Netlify</div>
+      <div>
+        Open-sourced on
+        <a
+          href="https://github.com/bbelewe/SheCodes-Basics-Add-On"
+          target="_blank"
+          >GitHub</a
+        >
+        and Hosted on Netlify
+      </div>
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark"); is another solution
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let theme = document.querySelector(".theme-button");
+      theme.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
