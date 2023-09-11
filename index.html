@@ -65,6 +65,17 @@
       filter: contrast(50%);
       transform: scale(1.05);
     }
+    .grid {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+    }
+    .grid img {
+      width: 100%;
+      height: 200px;
+      border-radius: 5px;
+    }
   </style>
   <body>
     <button class="theme-button">Change Theme</button>
@@ -78,18 +89,24 @@
           class="piano-intro-pic"
         />
       </a>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/587/original/piano_main.jpeg?1694389123"
-        alt="Overhead Shot of a Grand Piano"
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/585/original/jordan-whitfield-BhfE1IgcsA8-unsplash.jpg?1694389004"
-        alt="Woman playing Wooden Yamaha Piano"
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/588/original/pianohobby.jpeg?1694389166"
-        alt="A Shot from down low of a piano in a concert hall"
-      />
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/587/original/piano_main.jpeg?1694389123"
+          alt="Overhead Shot of a Grand Piano"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/585/original/jordan-whitfield-BhfE1IgcsA8-unsplash.jpg?1694389004"
+          alt="Woman playing Wooden Yamaha Piano"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/589/original/playing_piano.jpeg?1694393077"
+          alt="Hands playing a Piano"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/588/original/pianohobby.jpeg?1694389166"
+          alt="A Shot from down low of a piano in a concert hall"
+        />
+      </div>
       <p>
         The piano is a keyboard instrument that produces sound when pressed on
         the keys. Most modern pianos have a row of 88 black and white keys: 52
